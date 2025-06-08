@@ -3,11 +3,6 @@ import sys
 from hd.downloader import download_files
 from hd.parser import parse_downloading_links, valid_domains
 
-
-# Функция для асинхронной загрузки одного файла
-# TODO Осталось одвести все это в нормальное состояние
-# TODO При этом желательно сделать удобное и красивое логирование
-
 yes_answer = {"y", "Y", "Yes", "yes", "Да"}
 
 

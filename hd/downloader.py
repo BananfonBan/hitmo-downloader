@@ -13,8 +13,6 @@ async def download_file(semaphore, session: aiohttp.ClientSession, url, filename
     try:
         async with semaphore, session.get(url) as response:
             if response.status == 200:
-                
-                # Записываем файл в указанное место
                 with open(full_save_path, 'wb') as f:
                     while True:
                         chunk = await response.content.read(1024)

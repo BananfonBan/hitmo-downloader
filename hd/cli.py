@@ -5,7 +5,6 @@ import argparse
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Асинхронная загрузка треков с rus.hitmotop.com по ссылкам.")
     
-    # Аргументы командной строки
     parser.add_argument(
         "-u", "--urls",
         type=str,
