@@ -1,0 +1,23 @@
+[build-system]
+requires = [
+    "setuptools",
+    "setuptools-git"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hitmo-downloader"
+version = "0.1.0"
+description = "Simple asynchronous music downloader from the rus.hitmotop.com"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.11.18",
+    "beautifulsoup4>=4.13.4",
+    "httpx>=0.28.1",
+    "requests>=2.32.3",
+    "tqdm>=4.67.1",
+]
+
+[project.scripts]
+hitmo-downloader = "hd.main:main"
